@@ -1,0 +1,25 @@
+{
+  "name": "tecnovedades",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env TAILWIND_MODE=watch postcss ./src/tailwind.css -o ./public/css/style.css --watch --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theodor200/tecnovedadesweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theodor200/tecnovedadesweb/issues"
+  },
+  "homepage": "https://github.com/theodor200/tecnovedadesweb#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
+}
