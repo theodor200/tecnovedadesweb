@@ -566,15 +566,29 @@ video {
 [hidden] {
   display: none;
 }
+
+*, ::before, ::after {
+	--tw-border-opacity: 1;
+	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
 .col-span-3 {
 	grid-column: span 3 / span 3;
 }
 .col-span-6 {
 	grid-column: span 6 / span 6;
 }
+.col-span-4 {
+	grid-column: span 4 / span 4;
+}
+.col-span-5 {
+	grid-column: span 5 / span 5;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+.mt-16 {
+	margin-top: 4rem;
 }
 .block {
 	display: block;
@@ -600,6 +614,15 @@ video {
 .h-\[40px\] {
 	height: 40px;
 }
+.h-24 {
+	height: 6rem;
+}
+.h-52 {
+	height: 13rem;
+}
+.h-\[767px\] {
+	height: 767px;
+}
 .w-11\/12 {
 	width: 91.666667%;
 }
@@ -609,8 +632,29 @@ video {
 .w-\[200px\] {
 	width: 200px;
 }
+.w-full {
+	width: 100%;
+}
+.w-11 {
+	width: 2.75rem;
+}
+.flex-grow {
+	flex-grow: 1;
+}
+.flex-grow-0 {
+	flex-grow: 0;
+}
 .grid-cols-12 {
 	grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-col {
+	flex-direction: column;
+}
+.flex-wrap {
+	flex-wrap: wrap;
 }
 .items-center {
 	align-items: center;
@@ -620,6 +664,9 @@ video {
 }
 .justify-center {
 	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
 }
 .space-x-16 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
@@ -641,11 +688,19 @@ video {
 	margin-right: calc(0.5rem * var(--tw-space-x-reverse));
 	margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+	margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .self-center {
 	align-self: center;
 }
 .rounded-3xl {
 	border-radius: 1.5rem;
+}
+.border {
+	border-width: 1px;
 }
 .bg-green-600 {
 	--tw-bg-opacity: 1;
@@ -671,13 +726,49 @@ video {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
+.px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.px-5 {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
 .font-poppins {
 	font-family: Poppins, sans-serif;
+}
+.text-6xl {
+	font-size: 3.75rem;
+	line-height: 1;
+}
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 .font-bold {
 	font-weight: 700;
 }
+.font-extrabold {
+	font-weight: 800;
+}
+.leading-\[75\] {
+	line-height: 75;
+}
+.leading-\[75px\] {
+	line-height: 75px;
+}
+.leading-\[4\.688rem\] {
+	line-height: 4.688rem;
+}
 .text-white {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.text-\[\#454545\] {
+	--tw-text-opacity: 1;
+	color: rgba(69, 69, 69, var(--tw-text-opacity));
+}
+.text-\[\#85878B\] {
+	--tw-text-opacity: 1;
+	color: rgba(133, 135, 139, var(--tw-text-opacity));
 }
