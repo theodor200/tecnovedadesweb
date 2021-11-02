@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tecnovedades</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">   
 </head>
-<body class="font-poppins bg-[#FCFCFC]">
-    <header class="grid grid-cols-12 w-11/12 mx-auto h-2/6">
+<body class="font-poppins bg-[#FCFCFC] h-screen border">
+    <header class="grid grid-cols-12 w-10/12 mx-auto mt-8">
 
             <!--Logo SVG-->
             <div class="
@@ -57,22 +57,24 @@
     <div class="
         grid
         grid-cols-12
-        w-11/12 
+        place-content-between
+        w-10/12 
         mx-auto
         mt-16
+        border
     ">
-        <div class="col-span-6">
-            <div class="flex flex-col">
+        <div class="col-span-6 flex flex-col items-stretch h-100">
+            <div class="flex flex-col self-start">
                 <h2 class="text-xl font-bold text-[#85878B]">Incremente el alcance de sus productos o servicios</h2>
-                <h1 class="font-extrabold text-6xl text-[#454545] leading-[4.688rem]">Pon tu negocio en linea, nosotros sabemos como hacerlo.</h1>
-                <p class="text-xl text-[#85878B]">
+                <h1 class="font-extrabold text-6xl text-[#454545] leading-[4.688rem] mt-8">Pon tu negocio en linea, nosotros sabemos como hacerlo.</h1>
+                <p class="text-xl text-[#85878B] mt-8">
                     Somos conscientes que el aspecto, la funcionalidad y el contenido de tu sitio web son los encargados de transmitir a tus clientes 
                     la esencia de tu empresa y de convencerlos de confiar en tus productos y servicios.
                 </p>
                 <a href="#">Cotizar web</a>
             </div>            
 
-            <div class="flex">
+            <div class="flex self-end">
                 <embed src="./img/logo_woocommerce.svg">
                 <embed src="./img/logo_shopify.svg">
                 <embed src="./img/logo_wordpress.svg">
@@ -80,10 +82,10 @@
             </div>
         </div>
         
-        <div class="col-span-6">
-            <img src="./img/cliente.png" alt="Cliente interactuando con sus cliente por medio de su website.">
+        <div class="col-span-6 flex justify-center bg-background-svg bg-no-repeat bg-bottom border">            
+           <img src="./img/cliente.png" alt="">
         </div>
-
+        
     </div>
 </body>
 </html>
