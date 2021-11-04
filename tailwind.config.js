@@ -9,9 +9,9 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
       },
-      backgroundImage: {
-        'background-svg': "url('/public/img/background_index.svg')"
-       }
+      /*backgroundImage: {
+        'background': "url('/public/img/background.svg')"
+      }*/
     }
   },
   variants: {
